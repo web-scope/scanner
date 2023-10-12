@@ -13,7 +13,7 @@ export default function Login() {
         <CardContent className="flex flex-col gap-2">
           <Typography variant="h5">Login</Typography>
           <Divider />
-          <div className='flex flex-col gap-4'>
+          <div className="flex flex-col gap-4">
             <TextField type="text" id="email" label="Email" variant="outlined" />
             <TextField type="password" id="password" label="Password" variant="outlined" />
           </div>

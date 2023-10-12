@@ -10,7 +10,7 @@ export default function Header() {
 
   return (
     <>
-      <header className="flex flex-row justify-between items-center bg-blue-700 px-4 text-white h-16">
+      <header className="flex h-16 flex-row items-center justify-between bg-blue-700 px-4 text-white">
         <Link href="/" className="text-lg text-white no-underline hover:underline">
           Scanner App
         </Link>

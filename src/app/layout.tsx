@@ -13,10 +13,10 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html className="h-[100dvh] flex flex-col" lang="en">
-      <body className={`${roboto.className} flex flex-col grow`}>
+    <html className="flex h-[100dvh] flex-col" lang="en">
+      <body className={`${roboto.className} flex grow flex-col`}>
         <Header></Header>
-        <main className="flex flex-col flex-1">{children}</main>
+        <main className="flex flex-1 flex-col">{children}</main>
         <Footer></Footer>
       </body>
     </html>
