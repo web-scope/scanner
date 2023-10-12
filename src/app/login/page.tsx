@@ -1,10 +1,19 @@
-import { Slider } from '@mui/material';
+import { Card, CardContent, Typography } from '@mui/material';
+import type { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'Scanner App - Login',
+  description: 'Aplicatie de scanare a codurilor QR',
+};
 
 export default function Login() {
   return (
-    <div>
-      <Slider defaultValue={30} />
-      <Slider defaultValue={30} className="text-teal-600" />
+    <div className="">
+      <Card>
+        <CardContent>
+          <Typography variant="h5">Login</Typography>
+        </CardContent>
+      </Card>
     </div>
   );
 }
