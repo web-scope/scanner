@@ -1,6 +1,8 @@
+import Footer from '@/components/Footer';
 import './globals.css';
 import type { Metadata } from 'next';
 import { Roboto } from 'next/font/google';
+import Header from '@/components/Header';
 
 const roboto = Roboto({ weight: '500', subsets: ['latin'] });
 
@@ -11,8 +13,12 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en">
-      <body className={`${roboto.className} px-6 py-12`}>{children}</body>
+    <html className="h-[100dvh] flex flex-col" lang="en">
+      <body className={`${roboto.className} flex flex-col grow`}>
+        <Header></Header>
+        <main className="flex flex-col flex-1">{children}</main>
+        <Footer></Footer>
+      </body>
     </html>
   );
 }
