@@ -1,0 +1,12 @@
+{
+    "recommendations": [
+        "eamodio.gitlens",
+        "monokai.theme-monokai-pro-vscode",
+        "christian-kohler.npm-intellisense",
+        "esbenp.prettier-vscode",
+        "bradlc.vscode-tailwindcss",
+        "shardulm94.trailing-spaces",
+        "vscode-icons-team.vscode-icons",
+        "streetsidesoftware.code-spell-checker"
+    ]
+}
