@@ -1,36 +1,28 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Scanner App
 
-## Getting Started
+This is an app made using [Next.js](https://nextjs.org/docs) and [Supabase](https://supabase.com/docs)
 
-First, run the development server:
+## Setting up
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+First, make sure you have [pnpm](https://pnpm.io/installation) installed.
+
+Then, setup the recommended workspace VSCode extensions, by going to
+
+```
+Extensions > Type @recommended > Click on the cloud icon to download the recommended extensions
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Installing and adding dependencies
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Run `pnpm i` to install the dependencies. To add dependencies, use `pnpm add`. More commands and troubleshooting can be found in the pnpm docs.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+## Running the application
 
-## Learn More
+Run `pnpm dev`
 
-To learn more about Next.js, take a look at the following resources:
+## Setting up Supabase locally
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Supabase can be setup locally for an easier dev experience, a guide can be found [here](https://supabase.com/docs/guides/cli/local-development)
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+> [!NOTE]
+> You can run supabase commands directly by invoking `pnpm supabase <your_command>`, instead of running `pnpx` or `npx`
